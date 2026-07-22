@@ -1,8 +1,6 @@
 //eg: i.p nos[]: {2,5,0,9,7,8,6}, target =14,o.p true
 //target=25, o.p false
 //constraint 2<=n<=10^6
-//Approach 1, using Brute force i.e picking up one by one element & adding it to element ahead of it.
-//Here T()=O(n^2)which is obviously not acceptable
 
 //approach 2 ,using 2 pointer. but requirement is that the element of array need to be sorted (ASC order).T()=O(n log n).
 
