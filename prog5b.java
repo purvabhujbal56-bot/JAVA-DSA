@@ -29,7 +29,7 @@ public class prog5b {
             int complement = target-nos[i];
             if (hs.contains(complement)) //conatins is a boolean method for searching data
             {
-                System.out.println("pair founs {"+complement+","+nos[i]+"}");
+                System.out.println("pair found {"+complement+","+nos[i]+"}");
                 return true;
             }
             hs.add(nos[i]);
