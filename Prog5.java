@@ -4,6 +4,8 @@
 //Approach 1, using Brute force i.e picking up one by one element & adding it to element ahead of it.
 //Here T()=O(n^2)which is obviously not acceptable
 
+//to print all pair of elements where sum=target
+
 import java.util.*;  // to accept target value using scanner
 
 public class Prog5 {
@@ -16,21 +18,26 @@ public class Prog5 {
         int target = sc.nextInt();
         System.out.println("Is sum of any 2 distinct elements from nos[] equals to target?" + isSumTarget(nos,target));
     }
-    static boolean isSumTarget(int nos[],int target)
+    static boolean isSumTarget(int nos[], int target)
     {
-        for(int i=0;i<nos.length-1;i++)
+    boolean found = false;  //till now pais not found
+
+    for(int i = 0; i < nos.length - 1; i++)
+    {
+        for(int j = i + 1; j < nos.length; j++)
         {
-            for(int j=i+1;j<nos.length;j++)
+            if(nos[i] + nos[j] == target)
             {
-                int sum = nos[i]+nos[j];
-                if(sum==target)
-                {
-                    System.out.println("pair found{" +nos[i]+","+nos[j]+"}");
-                    return true;
-                }
+                System.out.println("Pair found {" + nos[i] + "," + nos[j] + "}");
+                found = true;
             }
         }
-        System.out.println("pair not found");
-        return false;
     }
+
+    if(!found)
+        System.out.println("Pair not found");
+
+    return found;
+    }
+
 }
