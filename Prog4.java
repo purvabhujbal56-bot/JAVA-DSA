@@ -15,17 +15,21 @@ class prog4
 	}
 	static int[] addOne(int nos[])
 	{
-		for(int i=nos.length-1;i>=0;i--)
+        //read digits in array from R To L as addition is performed from R to L
+		for(int i=nos.length-1;i>=0;i--) 
 		{
+            //case-1 : if digit != 9 , just add 1 to digit and return array
 			if(nos[i]!=9)
 			{
 				nos[i]++;
 				return nos;
 			}
+            //case-2 : if digit is 9, change it to 0, Do not consider "carry" 
 			nos[i]=0;
         }
-			int result[]=new int [nos.length+1];
-			result[0]=1;
+        //case-3 , all digits are 9
+			int result[]=new int [nos.length+1];  //numeric arrays are auto intilised by 0
+			result[0]=1;    //all 9 and 0 and length of array increases by 1
         
 			return result;
 		
