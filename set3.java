@@ -11,6 +11,7 @@ class Set3 {
         int[] nos = {38, 12, 10, 37, 20, 36, 40, 35, 39, 11};
         System.out.println("given array nos[] contains: " +Arrays.toString(nos));
         System.out.println("Length of longest consecutive sequence is: " +getlongestConsecutiveSequence(nos));
+        
     }
 
     // Method to find length of longest consecutive sequence
@@ -24,6 +25,7 @@ class Set3 {
             hs.add(no);
         //step-2 iterate in hashset and look for predecessor of element.if predecessor exists,it means the no is not start of sequence & simply ignore it
         int max_count=0;
+        int sequenceStart=0;
         for (int no : hs) {
             if (!hs.contains(no-1)) //no predecessor for no
             {
@@ -35,10 +37,21 @@ class Set3 {
                     count++;
                     next = next +1; //look for successor's successor
                 }
-                if (max_count<count) 
+                if (max_count<count) {
                     max_count=count;
+                    sequenceStart=no;
+                }
             }
         }
+        
+         // Print the longest consecutive sequence
+        System.out.print("Longest consecutive sequence is: ");
+        for (int i = 0; i < max_count; i++) {
+            System.out.print(sequenceStart + " ");
+            sequenceStart++;
+        }
+        System.out.println();
+
         return max_count;
     }
 }
