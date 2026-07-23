@@ -23,6 +23,7 @@ public class LinkedListEx {
     {
         //to determine the min no of required rotations
         no = no%ll.size();
+        System.out.println("Min no of rotation are"+no);
         for(int i=0;i<no;i++)
         {
             ll.addLast(ll.getFirst());
