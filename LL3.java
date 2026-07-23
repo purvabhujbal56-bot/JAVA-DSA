@@ -32,7 +32,7 @@ public class LL3 {
         Node head2= new Node(2);
         head2.next = new Node(5);
         //make 40 of ll1 as interecting node
-        head2.next.next = head1.next.next.next;
+        head2.next.next = head1.next.next.next;    //comment it if you do not want to intersect
         //if we skip above statement ,then we have no intersecting node
 
         Node intersect = checkIntersection(head1,head2);
