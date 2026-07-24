@@ -10,12 +10,10 @@ class QueueEx {
     }
 }*/
 
-//To simulate a tickeeting window where customers are served on first come first serve basis
+//To simulate a ticketing window where customers are served on first come first serve basis
 
 import java.util.*;
-/**
- * QueueEx
- */
+
 public class QueueEx {
 
     public static void main(String[] args) {
