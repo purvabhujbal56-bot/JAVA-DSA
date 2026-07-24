@@ -13,6 +13,7 @@ public class MapEx {
         int target = sc.nextInt();
         int result[]=getPairs(nos,target);
         System.out.println("{"+result[0]+","+result[1]+"}");
+        sc.close();
     }
     static int[] getPairs(int nos[],int target)
     {

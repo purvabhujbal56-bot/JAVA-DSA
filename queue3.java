@@ -16,6 +16,7 @@ class queue3 {
         System.out.println("Enter value for k i.e to get kth smallest element: ");
         int k = sc.nextInt();
         System.out.println(k+"th smallest element in nos[] is: "+getKthLargestElement(nos,k));
+        sc.close();
     }
     static int getKthLargestElement(int nos[] ,int k )
     {

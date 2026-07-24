@@ -18,6 +18,7 @@ public class LinkedListEx {
         int no = sc.nextInt();
         ll = rotateLL(ll,no);
         System.out.println("after  rotation , LL conatins" +ll);
+        sc.close();
     }
     static LinkedList<Integer> rotateLL(LinkedList<Integer>ll,int no)
     {

@@ -14,6 +14,7 @@ public class StackEx {
         System.out.println("enter the expression:");
         String expr = sc.next();
         System.out.println("Is the expression valid or not ? "+isValid(expr));
+        sc.close();
     }
     static boolean isValid(String expr)
     {

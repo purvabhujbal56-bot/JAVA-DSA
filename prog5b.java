@@ -14,6 +14,7 @@ public class prog5b {
         System.out.println("Enetr target value :");
         int target = sc.nextInt();
         System.out.println("Is sum of any 2 distinct elements from nos[] equals to target?" + isSumTarget(nos,target));
+        sc.close();
     }
     static boolean isSumTarget(int nos[], int target)
     {

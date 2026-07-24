@@ -28,6 +28,7 @@ class Queue2 {
         System.out.println("Enter value for k i.e to get kth largest element: ");
         int k = sc.nextInt();
         System.out.println(k+"th largest element in nos[] is: "+getKthLargestElement(nos,k));
+        sc.close();
     }
     static int getKthLargestElement(int nos[] ,int k )
     {
