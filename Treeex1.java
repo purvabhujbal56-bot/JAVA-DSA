@@ -1,11 +1,11 @@
 //given a binary tree with nodes obtaining an int value and also a target value .
 // determine whether sum of all nodes in any path is target or not 
 
-class Node {
+class Nodeex {
     int data;
-    Node left, right;
+    Nodeex left, right;
 
-    Node(int data) {
+    Nodeex(int data) {
         this.data = data;
         left = right = null;
     }
@@ -14,7 +14,7 @@ class Node {
 public class Treeex1 {
 
     // Method to check whether a path with given sum exists
-    static boolean hasPathSum(Node root, int target) {
+    static boolean hasPathSum(Nodeex root, int target) {
 
         // If tree is empty
         if (root == null)
@@ -44,12 +44,12 @@ public class Treeex1 {
               3   5    2
         */
 
-        Node root = new Node(10);
-        root.left = new Node(8);
-        root.right = new Node(2);
-        root.left.left = new Node(3);
-        root.left.right = new Node(5);
-        root.right.right = new Node(2);
+        Nodeex root = new Nodeex(10);
+        root.left = new Nodeex(8);
+        root.right = new Nodeex(2);
+        root.left.left = new Nodeex(3);
+        root.left.right = new Nodeex(5);
+        root.right.right = new Nodeex(2);
 
         int target = 21;
 
