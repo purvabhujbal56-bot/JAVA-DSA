@@ -51,6 +51,7 @@ public class Treeex1 {
         root.left.right = new Nodeex(5);
         root.right.right = new Nodeex(2);
 
+        //int target = 22;
         int target = 21;
 
         if (hasPathSum(root, target))
