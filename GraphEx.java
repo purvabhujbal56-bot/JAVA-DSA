@@ -17,7 +17,7 @@ public class GraphEx {
         for(int i=0;i<adj_matrix.length;i++)//length property in martix return no of rows in  atrix
         {
             for (int j = 0; j < adj_matrix[0].length; j++)//length of roews in matrix return the no. of columns in matrix
-                System.out.println(adj_matrix[i][j]+"");
+                System.out.print(adj_matrix[i][j]+" ");
             System.out.println();
         }
         System.out.println("no. of island that can be formed are "+countIsland(adj_matrix));
