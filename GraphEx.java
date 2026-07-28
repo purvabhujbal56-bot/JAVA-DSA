@@ -39,6 +39,8 @@ public class GraphEx {
                 }
             }
         }
+        //return count;  
+
         return count;  
     }
       
