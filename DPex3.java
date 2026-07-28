@@ -20,6 +20,7 @@ public class DPex3 {
 
         if (n <= 1)
             return n;
+//logic of fibonacci serise
 
         long first = 0;
         long second = 1;
@@ -31,6 +32,7 @@ public class DPex3 {
             second = next;
         }
 
+        //return second;
         return second;
     }
 }
