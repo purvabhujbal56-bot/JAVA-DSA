@@ -2,7 +2,8 @@
 // determine whether sum of all nodes in any path is target or not 
 //logic: this problen has to be solved using 2 stacks only. 1 stack will store addresses of nodes and 
 // another running total from root node to parent node.
-//without addresses ,we will not be able to traverse the tree . check the running total with target value when you reach leaf node only
+//without addresses ,we will not be able to traverse the tree .
+//  check the running total with target value when you reach leaf node only
 
 import java.util.*;
 
@@ -66,6 +67,7 @@ public class Treeex1 {
                 stk_val.push(sum+temp.right.data);
             }
         }
+        //return false;
         return false;
     }
 }
