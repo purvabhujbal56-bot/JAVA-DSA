@@ -62,6 +62,7 @@ public class TreeEx {
         if (diff < getMinDiff)
            getMinDiff = diff;
     }
+    //return getMinDiff;
     return getMinDiff;
     }
 }
