@@ -12,6 +12,8 @@ public class LinkedListEx {
         ll.add(30);
         ll.add(40);
         ll.add(50);
+        ll.add(60);
+        ll.add(70);
         System.out.println("Given LL conatins :"+ll);
         Scanner sc = new Scanner(System.in);
         System.out.println("Enetr no for rotating the LL :  ");
