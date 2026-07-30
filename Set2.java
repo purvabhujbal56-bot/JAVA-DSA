@@ -32,6 +32,7 @@ public class Set2 {
         //to copy all data from 1 collection into another ,there are 2 methods and no need to use loop
         //either use the parameterized constructor with collection reference or use addall()
 
+        //LinkedHashSet<String> lhs = new LinkedHashSet<>(ll1);//1.
         LinkedHashSet<String> lhs = new LinkedHashSet<>(ll1);//1.
 
         /*  LinkedHashSet<String> lhs = new LinkedHashSet<>(); //2.
