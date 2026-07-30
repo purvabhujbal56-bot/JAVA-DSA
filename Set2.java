@@ -18,6 +18,7 @@ public class Set2 {
         ll1.add("Suresh");
         ll1.add("Amit");
         ll1.add("Veena");
+        ll1.add("Veduu");
 
         System.out.println("Given LL contains: " + ll1);
 
