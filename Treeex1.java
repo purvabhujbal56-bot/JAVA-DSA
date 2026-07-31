@@ -67,6 +67,7 @@ public class Treeex1 {
                 stk_val.push(sum+temp.right.data);
             }
         }
+        //return false;
         return false;
     }
 }
