@@ -14,7 +14,6 @@ class Reverse_arr {
 
         System.out.println("Reversed array is: " + Arrays.toString(result));
     }
-
     static int[] getReverseNos(int nos[]) {
         int j = nos.length - 1;
         int temp;
@@ -24,7 +23,7 @@ class Reverse_arr {
             nos[i] = nos[j];
             nos[j] = temp;
         }
-
+        //return nos;
         return nos;
     }
 }
