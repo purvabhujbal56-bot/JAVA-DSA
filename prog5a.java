@@ -34,6 +34,7 @@ public class prog5a {
                 i++;     //try larger element
         }
         System.out.println("pair not found");
+        //return false;
         return false;
     }
 }
