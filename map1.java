@@ -34,6 +34,7 @@ class map1 {
                 tm.put(ch,count);
             }
         }
+        //return tm;
         return tm;
     }
 }
