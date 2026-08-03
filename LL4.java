@@ -1,12 +1,11 @@
 //given ll of names. find position of middle node
-//note that if we use predefined linkedlist class,then this assignment can be done easily bcz size() will return no of node in ll & this no/2 will give the 
+//note that if we use predefined linkedlist class,then this assignment can be done
+// easily bcz size() will return no of node in ll & this no/2 will give the 
 //position of middle node & usingg get() print value in middle node.
 //so we will use technique from prog4
 
 public class LL4 {
-
-// Node class stores one name and a reference to the next node
-   
+// Node class stores one name and a reference to the next node  
     static class Node {
         String name;
         Node next;
@@ -17,7 +16,6 @@ public class LL4 {
             this.next = null;
         }
     }
-
     public static void main(String[] args) {
         // Creating linked list:
         // sunil -> ajay -> priti -> nadeem -> manish
@@ -40,19 +38,14 @@ public class LL4 {
         //slow and fast pointer are initially positioned on head node.slow will move ahead by single position 
         //& fast will move by 2 position. the algorithm says that when fast reaches end of ll,slow is exactly at the center og ll
 
-         // slow pointer moves one node at a time
-        Node slow = head;
-
-        // fast pointer moves two nodes at a time
-        Node fast = head;
+        Node slow = head;   // slow pointer moves one node at a time
+        Node fast = head;    // fast pointer moves two nodes at a time
 
         // When fast reaches the end, slow will be at middle node
         while (fast != null && fast.next != null) {
             slow = slow.next;       // move slow by one node
             fast = fast.next.next;  // move fast by two nodes
         }
-
-        // Return middle node
-        return slow;
+        return slow;     // Return middle node
     }
 }
