@@ -54,7 +54,6 @@ public class LL3 {
             else
                 p2 = p2.next;
         } 
-       // return  p1;  //return p2 is also ok
         return  p1;  //return p2 is also ok
      }
 }
