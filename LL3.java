@@ -15,9 +15,6 @@ class Node{
         next=null;
     }
 }
-/**
- * LL3
- */
 public class LL3 {
 
      public static void main(String[] args) {
@@ -57,6 +54,7 @@ public class LL3 {
             else
                 p2 = p2.next;
         } 
+       // return  p1;  //return p2 is also ok
         return  p1;  //return p2 is also ok
      }
 }
